@@ -15,7 +15,7 @@ export default class AuthValidation {
 
         if (typeof pwd !== "string") throw "pwd must be a string"
 
-        if (pwd.length < 6) throw "Password mush not be less than six (6) characters";
+        if (pwd.length < 6) throw "Password must not be less than six (6) characters";
 
 
         // return next();

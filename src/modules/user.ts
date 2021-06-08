@@ -48,6 +48,15 @@ export default class User {
     }
 
     
+    get toJson2() {
+        return{
+            name: this.name,
+            email: this.email,
+            password: "****",
+            isVerified: this.isVerified,
+            lastLogin: this.lastLogin
+        }
+    }
 }
 
 

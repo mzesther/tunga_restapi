@@ -44,6 +44,11 @@ class AuthController {
         res.send(user);
     }
 
+    static set_verified(req: Request, res: Response) {
+        const { email, isVerified } = req.body;
+        const user = auth.setisverified( email as string , isVerified)
+        res.send({message:"Account Successfully updated", data: user});
+    }
 }
 
 
